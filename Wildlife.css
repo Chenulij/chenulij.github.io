@@ -1,0 +1,148 @@
+/* Resetting some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    background-color: #574128; /* Set your desired background color */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+/* Styling the navigation bar */
+#mainNav {
+    background-color:  #dbda8cf5; /* Set your desired background color */
+}
+
+#mainNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#mainNav li {
+    float: left;
+}
+
+#mainNav a {
+    display: block;
+    color: rgb(0, 0, 0); /* Set your desired text color */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#mainNav a:hover {
+    background-color: #bcc473; /* Set your desired hover background color */
+}
+.logo img {
+    max-height: 50px; /* Adjust the max height as needed */
+    margin-right: 10px; /* Add some margin to the right of the logo */
+}
+.long-image {
+    width: 100%; /* Make the image take the full width of its container */
+    height: auto;
+    margin-top: 30px; /* Maintain the image's aspect ratio */
+    /* Add any additional styling you may need */
+} 
+.container{
+    padding: 2rem; 
+    /* Container holding the image and the text */
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: rgb(244, 247, 244);
+    text-shadow: 2px 2px 4px;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .top-left {
+    position: absolute;
+    top: 8px; /* Adjust the top position as needed */
+    left: 16px; /* Adjust the left position as needed */
+    color: white; /* Set your desired text color */
+    font-size: 24px; /* Set your desired font size */
+    font-weight: bold; /* Set your desired font weight */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow (adjust values as needed) */
+}
+.slider-wrapper{
+    position: relative;
+    max-width: 90rem;
+    margin: auto;
+}
+
+.slider{
+    display:flex;
+    aspect-ratio: 16/8;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25 );
+    border-radius: 0.5rem;
+    position: relative; /* Add this line */
+}
+.slider img { 
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit:cover;
+}
+.slider-nav {
+    display: flex;
+    gap: 10px; /* Adjust the space between dots as needed */
+    justify-content: center; /* Center the dots horizontally */
+    position: absolute;
+    bottom: 10px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slider-nav a { 
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+
+}
+.slider-nav a:hover{
+    opacity: 1;
+} 
+/*intro page*/
+.container {
+    display: flex;
+    justify-content: space-between; /* Add space between content and image */
+    padding: 20px; /* Add some padding for better spacing */ 
+    color: black;  
+    padding-bottom: 20px;
+}
+.content {
+    flex: 1; /* Let the content take remaining space */
+}
+image-container {
+    flex: 1; /* Let the image and link take remaining space */
+    display: flex;
+    flex-direction: column; /* Stack image and link vertically */
+    align-items: flex-end; /* Align items to the end (right side) */
+}
+.image {
+    max-width: 500px; /* Adjust the maximum width of the image */
+    height: auto;
+    margin-right: 10px; /* Add some margin between the image and link */
+} 
+.wrapper {
+    background-color: #bcc473;
+    padding: 20px;
+}
+
